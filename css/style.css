@@ -1,0 +1,144 @@
+/* General styling */
+body {
+	  font-family: Arial, sans-serif;
+	  font-size: 16px;
+	  line-height: 1.6em;
+	  margin: 0;
+	  padding: 0;
+	  background: linear-gradient(135deg, #3A3A36, #61615E);
+	  color: #f4f4f4;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 100vh;
+	}
+	
+	.container {
+	  width: 80%;
+	  max-width: 900px;
+	  margin: 0 auto;
+	  padding: 20px;
+	  background: rgba(0, 0, 0, 0.7);
+	  border-radius: 10px;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	  transition: transform 0.3s ease;
+	}
+	
+	.container:hover {
+	  transform: scale(1.02);
+	}
+	
+	header {
+	  border-bottom: 3px solid #272726;
+	  background: linear-gradient(to right, #3A3A36, #555);
+	  color: #FFF;
+	  padding: 20px;
+	  text-align: center;
+	  border-radius: 10px 10px 0 0;
+	}
+	
+	header h1 {
+	  margin: 0;
+	  font-size: 2.5em;
+	  font-weight: bold;
+	  color: #FFF;
+	  animation: fadeIn 1.5s ease;
+	}
+	
+	/* Animation for fade-in effect */
+	@keyframes fadeIn {
+	  0% { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+	
+	main {
+	  padding: 20px;
+	  text-align: center;
+	  background: linear-gradient(to right, #61615E, #3A3A36);
+	  color: #fff;
+	}
+	
+	main h2 {
+	  font-size: 2em;
+	  margin-bottom: 10px;
+	  font-weight: bold;
+	}
+	
+	ul {
+	  padding: 0;
+	  list-style: none;
+	}
+	
+	li {
+	  padding: 5px 0;
+	  font-size: 1.1em;
+	}
+	
+	a {
+	  text-decoration: none;
+	  transition: all 0.3s ease;
+	}
+	
+	a.start, a.add {
+	  display: inline-block;
+	  padding: 10px 20px;
+	  border-radius: 25px;
+	  color: #fff;
+	  font-weight: bold;
+	  margin: 10px;
+	  transition: 0.3s ease;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	}
+	
+	a.start {
+	  background: #99CC00;
+	  border: 2px solid #99CC00;
+	}
+	
+	a.start:hover {
+	  background: #88BB00;
+	  border-color: #88BB00;
+	  transform: scale(1.1);
+	}
+	
+	a.add {
+	  background: #FF6347;
+	  border: 2px solid #FF6347;
+	}
+	
+	a.add:hover {
+	  background: #E5533A;
+	  border-color: #E5533A;
+	  transform: scale(1.1);
+	}
+	
+	footer {
+	  border-top: 3px solid #272726;
+	  background: #3A3A36;
+	  color: #BBBBB9;
+	  text-align: center;
+	  padding: 15px;
+	  font-size: 0.9em;
+	  border-radius: 0 0 10px 10px;
+	}
+	
+	/* Responsive Design */
+	@media only screen and (max-width: 768px) {
+	  .container {
+	    width: 90%;
+	  }
+	
+	  header h1 {
+	    font-size: 2em;
+	  }
+	
+	  main h2 {
+	    font-size: 1.5em;
+	  }
+	
+	  a.start, a.add {
+	    padding: 8px 15px;
+	    font-size: 1em;
+	  }
+	}
+	
